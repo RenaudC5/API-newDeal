@@ -31,7 +31,6 @@ class Modal extends React.Component {
         this.setState({country:country})
     }
     updateAbbreviation(e){
-        console.log(e.target.value);
         let country = this.state.country;
         country.abbreviation = e.target.value;
         this.setState({country:country})
@@ -57,7 +56,6 @@ class Modal extends React.Component {
 
 
     render(){
-        console.log(this.props);
         return(
             <>
             {this.props.show ?

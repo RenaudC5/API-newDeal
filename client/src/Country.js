@@ -12,7 +12,6 @@ class Country extends React.Component {
     }
     componentDidMount(){
         agent.COUNTRY.get().then(json => {
-            console.log(json);
             this.setState({countries:json});
         });
 
@@ -35,7 +34,6 @@ class Country extends React.Component {
     }
 
     render(){
-        console.log(this);
         let body = <tbody>
         {
             this.state.countries.map(country =>
