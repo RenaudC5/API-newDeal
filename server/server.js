@@ -1,9 +1,11 @@
+//modules
 const express = require('express');
 const cors = require('cors');
 const JsonDB = require('node-json-db');
 const bodyParser = require('body-parser');
 
 const port = 8080;
+
 const db = new JsonDB.JsonDB("./data/data", true, true);
 const country = require('./country/country')(db)
 
@@ -14,6 +16,7 @@ app.use(cors());
 
 app.use('/country', country)
 
+//error management
 function errorHandler(err, req, res, next) {
     console.error(err);
     if (err.isClientError) {
