@@ -9,7 +9,7 @@ cd client
 npm install && npm start
 ```
 
-[localhost:3000/](localhost:3000/) 
+[localhost:3000/](localhost:3000/)
 
 ## Server
 
@@ -41,6 +41,7 @@ source : [country-json](https://github.com/samayo/country-json/blob/master/src/c
 
 ### Routes
 
+[Swagger documentation](https://app.swaggerhub.com/apis/Polytech-Nantes/NEWDEAL_API/1.0.0#free) (https://app.swaggerhub.com/apis/Polytech-Nantes/NEWDEAL_API/1.0.0#free)
 
 `/country` : `GET` `POST`
 
